@@ -1,0 +1,55 @@
+<!-- Diego Kaleb Valenzuela Carrillo -->
+<!-- Solar System -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Solar System</title>
+        <!-- Styles: -->
+        <link rel="stylesheet" href="./libs/jquery-ui/jquery-ui.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/threejsscene.css" />
+        <!-- Libraries: -->
+        <script src="./libs/jquery-3.3.1/jquery-3.3.1.js"></script>
+        <script src="./libs/jquery-ui/jquery-ui.js"></script>
+        <script src="./libs/three.js/three.js"></script>
+        <!-- Javascripts: -->
+        <script src="solarSystemScene.js"></script>
+        <script src="sceneHandlers.js"></script>
+
+        <!-- Main function: -->
+        <script type="text/javascript">
+        $(document).ready(
+            function() {
+
+                $("#slider").slider({min: 0.1, max: 3, value: 1, step: 0.01, animate: false});
+                $("#slider").on("slide", function(e, u) {
+                    scaleScene(u.value);
+                });
+                var canvas = document.getElementById("webglcanvas");
+
+                // Awaking the scene:
+                createScene(canvas);
+
+                // Adding the possibility to recognice and use the mouse for triggering events:
+                addMouseHandler(canvas);
+                
+                run();
+            }
+        );
+        </script>
+    </head>
+    <body>
+        <!-- Divs used in styles in folder css: -->
+        <div id = "container">
+            <canvas id="webglcanvas" width=1200 height=600></canvas>
+            <div id = "title">Solar System</div>
+            <div id = "prompt">Drag the mouse to rotate the scene<br>Drag the slider to scale.</div>
+            <div id = "status">
+                <div id = "rotation">Rotation: 0,0,0</div>  <!-- This id updates in _sceneHandlers.js_-->
+                <div id="scale">Scale: 1</div>              <!-- This id updates in _sceneHandlers.js_-->
+            </div>
+        </div>
+
+        <div id="slider"></div>                             <!-- For scale purposes-->
+    </body>
+</html>
