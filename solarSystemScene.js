@@ -252,140 +252,140 @@
             marsMoon2.position.set(-1, 0, 0)
             marsSet.add( marsMoon2 )
 
-        // JUPITER
-        textureUrl = "./images/jupitermap.jpg"
+        // Jupiter:
+        textureUrl = "./images/Jupiter.jpg"
         texture = new THREE.TextureLoader().load(textureUrl)
-        material = new THREE.MeshPhongMaterial({ map: texture })
+        material = new THREE.MeshPhongMaterial({map: texture})
         geometry = new THREE.SphereGeometry(1.6, 20, 20)
         jupiter = new THREE.Mesh(geometry, material)
-        jupiterSet.add( jupiter )
-            // JUPITER MOON 1
+        jupiterSet.add(jupiter)
+            // Moon 1:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
-            material = new THREE.MeshPhongMaterial({ map: texture })
+            material = new THREE.MeshPhongMaterial({map: texture})
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             jupiterMoon1 = new THREE.Mesh(geometry, material)
             jupiterMoon1.position.set(2, 0, 0)
-            jupiterSet.add( jupiterMoon1 )
-            // JUPITER MOON 2
+            jupiterSet.add(jupiterMoon1)
+            // Moon 2:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
-            material = new THREE.MeshPhongMaterial({ map: texture })
+            material = new THREE.MeshPhongMaterial({map: texture})
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             jupiterMoon2 = new THREE.Mesh(geometry, material)
             jupiterMoon2.position.set(-2, 0, 0)
-            jupiterSet.add( jupiterMoon2 )
-            // JUPITER MOON 3
+            jupiterSet.add(jupiterMoon2)
+            // Moon 3:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
-            material = new THREE.MeshPhongMaterial({ map: texture })
+            material = new THREE.MeshPhongMaterial({map: texture})
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             jupiterMoon3 = new THREE.Mesh(geometry, material)
             jupiterMoon3.position.set(0, 2, 0)
-            jupiterSet.add( jupiterMoon3 )
-            // JUPITER MOON 4
+            jupiterSet.add(jupiterMoon3)
+            // Moon 4:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
-            material = new THREE.MeshPhongMaterial({ map: texture })
+            material = new THREE.MeshPhongMaterial({map: texture})
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             jupiterMoon4 = new THREE.Mesh(geometry, material)
             jupiterMoon4.position.set(0, 1, -2)
-            jupiterSet.add( jupiterMoon4 )
+            jupiterSet.add(jupiterMoon4)
 
-        // SATURN
-        textureUrl = "./images/saturnmap.jpg"
+        // Saturn:
+        textureUrl = "./images/Saturn.jpg"
         texture = new THREE.TextureLoader().load(textureUrl)
-        material = new THREE.MeshPhongMaterial({ map: texture })
+        material = new THREE.MeshPhongMaterial({map: texture})
         geometry = new THREE.SphereGeometry(1.1, 20, 20)
         saturn = new THREE.Mesh(geometry, material)
-        saturnSet.add( saturn )
-            // SATURN RING
+        saturnSet.add(saturn)
+            // Ring:
             geometry = new THREE.RingGeometry(1, 2, 32)
-            material = new THREE.MeshBasicMaterial( { color: 0xCCCC00, transparent: true, opacity: 0.3 } )
+            material = new THREE.MeshBasicMaterial( {color: 0xCCCC00, transparent: true, opacity: 0.3})
             saturnRing = new THREE.Mesh( geometry, material )
             saturnRing.rotation.x = Math.PI / 5
-            saturnSet.add( saturnRing )
-            // SATURN MOON 1
+            saturnSet.add(saturnRing)
+            // Moon 1:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
-            material = new THREE.MeshPhongMaterial({ map: texture })
+            material = new THREE.MeshPhongMaterial({map: texture})
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             saturnMoon1 = new THREE.Mesh(geometry, material)
             saturnMoon1.position.set(0, 1, -2)
-            saturnSet.add( saturnMoon1 )
-            // SATURN MOON 2
+            saturnSet.add(saturnMoon1)
+            // Moon 2:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
-            material = new THREE.MeshPhongMaterial({ map: texture })
+            material = new THREE.MeshPhongMaterial({map: texture})
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             saturnMoon2 = new THREE.Mesh(geometry, material)
             saturnMoon2.position.set(0, 2, 0)
-            saturnSet.add( saturnMoon2 )
-            // SATURN MOON 3
+            saturnSet.add(saturnMoon2)
+            // Moon 3:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
             material = new THREE.MeshPhongMaterial({ map: texture })
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             saturnMoon3 = new THREE.Mesh(geometry, material)
             saturnMoon3.position.set(2, 0, 2)
-            saturnSet.add( saturnMoon3 )
+            saturnSet.add(saturnMoon3)
 
-        // URANUS
-        textureUrl = "./images/uranusmap.jpg"
+        // Uranus:
+        textureUrl = "./images/Uranus.jpg"
         texture = new THREE.TextureLoader().load(textureUrl)
-        material = new THREE.MeshPhongMaterial({ map: texture })
+        material = new THREE.MeshPhongMaterial({map: texture})
         geometry = new THREE.SphereGeometry(0.7, 20, 20)
         uranus = new THREE.Mesh(geometry, material)
-        uranusSet.add( uranus )
-            // URANUS MOON 1
+        uranusSet.add(uranus)
+            // Moon 1:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
-            material = new THREE.MeshPhongMaterial({ map: texture })
+            material = new THREE.MeshPhongMaterial({map: texture})
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             uranusMoon1 = new THREE.Mesh(geometry, material)
             uranusMoon1.position.set(0, 0.5, -1)
-            uranusSet.add( uranusMoon1 )
-            // URANUS MOON 2
+            uranusSet.add(uranusMoon1)
+            // Moon 2:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
-            material = new THREE.MeshPhongMaterial({ map: texture })
+            material = new THREE.MeshPhongMaterial({map: texture})
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             uranusMoon2 = new THREE.Mesh(geometry, material)
             uranusMoon2.position.set(1, 1, 0)
-            uranusSet.add( uranusMoon2 )
+            uranusSet.add(uranusMoon2)
 
-        // NEPTUNE
-        textureUrl = "./images/neptunemap.jpg"
+        // Neptune:
+        textureUrl = "./images/Neptune.jpg"
         texture = new THREE.TextureLoader().load(textureUrl)
-        material = new THREE.MeshPhongMaterial({ map: texture })
+        material = new THREE.MeshPhongMaterial({map: texture})
         geometry = new THREE.SphereGeometry(0.7, 20, 20)
         neptune = new THREE.Mesh(geometry, material)
-        neptuneSet.add( neptune )
-            // NEPTUNE MOON 1
+        neptuneSet.add(neptune)
+            // Moon 1:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
             material = new THREE.MeshPhongMaterial({ map: texture })
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             neptuneMoon1 = new THREE.Mesh(geometry, material)
             neptuneMoon1.position.set(0, .9, -.5)
-            neptuneSet.add( neptuneMoon1 )
-            // NEPTUNE MOON 2
+            neptuneSet.add(neptuneMoon1)
+            // Moon 2:
             textureUrl = "./images/Moon.jpg"
             texture = new THREE.TextureLoader().load(textureUrl)
-            material = new THREE.MeshPhongMaterial({ map: texture })
+            material = new THREE.MeshPhongMaterial({map: texture})
             geometry = new THREE.SphereGeometry(.15, 20, 20)
             neptuneMoon2 = new THREE.Mesh(geometry, material)
             neptuneMoon2.position.set(0.5, 0, 1)
-            neptuneSet.add( neptuneMoon2 )
+            neptuneSet.add(neptuneMoon2)
 
-        // PLUTO
+        // Pluto
         textureUrl = "./images/plutomap.jpg"
         texture = new THREE.TextureLoader().load(textureUrl)
-        material = new THREE.MeshPhongMaterial({ map: texture })
+        material = new THREE.MeshPhongMaterial({map: texture})
         geometry = new THREE.SphereGeometry(0.25, 20, 20)
         pluto = new THREE.Mesh(geometry, material)
         pluto.position.set(-44, 0, 0)
-        solarSystem.add( pluto )
+        solarSystem.add(pluto)
 
         //Orbits:
         geometry = new THREE.TorusGeometry( 8, 0.1, 16, 100 )
